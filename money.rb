@@ -15,3 +15,23 @@ class Money
   protected
   attr_reader :amount
 end
+
+class Dollar < Money
+  def initialize(amount)
+    @amount = amount
+  end
+
+  def times(multiplier)
+    Dollar.new(@amount * multiplier)
+  end
+end
+
+class Franc < Money
+  def initialize(amount)
+    @amount = amount
+  end
+
+  def times(multiplier)
+    Franc.new(@amount * multiplier)
+  end
+end

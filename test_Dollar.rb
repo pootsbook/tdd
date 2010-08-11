@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby1.9.1
 
-require 'dollar'
+require 'money'
 require 'test/unit'
 
 class TestDollar < MiniTest::Unit::TestCase
