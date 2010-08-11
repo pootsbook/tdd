@@ -1,4 +1,6 @@
 class Money
+  attr_reader :currency
+
   def self.dollar(amount)
     Dollar.new(amount)
   end
@@ -24,6 +26,10 @@ class Dollar < Money
   def times(multiplier)
     Dollar.new(@amount * multiplier)
   end
+
+  def currency
+    :USD
+  end
 end
 
 class Franc < Money
@@ -33,5 +39,9 @@ class Franc < Money
 
   def times(multiplier)
     Franc.new(@amount * multiplier)
+  end
+
+  def currency
+    :CHF
   end
 end
