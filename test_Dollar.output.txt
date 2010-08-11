@@ -1,6 +1,6 @@
 Loaded suite ./test_Dollar
 Started
 .
-Finished in 0.000956407 seconds.
+Finished in 0.000967721 seconds.
 
 1 tests, 1 assertions, 0 failures, 0 errors
