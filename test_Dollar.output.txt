@@ -1,11 +1,6 @@
 Loaded suite ./test_Dollar
 Started
-F
-Finished in 0.046487404 seconds.
+.
+Finished in 0.000910521 seconds.
 
-  1) Failure:
-test_multiplication(TestDollar) [./test_Dollar.rb:10]:
-<10> expected but was
-<5>.
-
-1 tests, 1 assertions, 1 failures, 0 errors
+1 tests, 1 assertions, 0 failures, 0 errors
