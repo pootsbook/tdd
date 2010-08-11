@@ -1,11 +1,11 @@
 Loaded suite ./test_Dollar
 Started
-F
-Finished in 0.056385031 seconds.
+E
+Finished in 0.001136597 seconds.
 
-  1) Failure:
-test_multiplication(TestDollar) [./test_Dollar.rb:12]:
-<15> expected but was
-<30>.
+  1) Error:
+test_multiplication(TestDollar):
+NoMethodError: undefined method `amount' for 10:Fixnum
+    ./test_Dollar.rb:10:in `test_multiplication'
 
-1 tests, 2 assertions, 1 failures, 0 errors
+1 tests, 0 assertions, 0 failures, 1 errors
