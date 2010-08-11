@@ -6,7 +6,7 @@ class Money
   end
 
   def self.franc(amount)
-    Franc.new(amount, nil)
+    Franc.new(amount, :CHF)
   end
 
   def ==(other)
@@ -40,6 +40,6 @@ class Franc < Money
   end
 
   def times(multiplier)
-    Franc.new(@amount * multiplier, nil)
+    Money.franc(@amount * multiplier)
   end
 end

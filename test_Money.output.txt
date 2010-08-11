@@ -1,10 +1,6 @@
 Loaded suite ./test_Money
 Started
-F.
-Finished in 0.002565 seconds.
+..
+Finished in 0.001774 seconds.
 
-  1) Failure:
-test_currency(TestMoney) [./test_Money.rb:13]:
-Expected :CHF, not nil.
-
-2 tests, 3 assertions, 1 failures, 0 errors, 0 skips
+2 tests, 3 assertions, 0 failures, 0 errors, 0 skips
