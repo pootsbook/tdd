@@ -1,6 +1,20 @@
 Loaded suite ./test_Money
 Started
-..
-Finished in 0.001764 seconds.
+EE
+Finished in 0.002148 seconds.
 
-2 tests, 3 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_currency(TestMoney):
+ArgumentError: wrong number of arguments (1 for 2)
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `new'
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `franc'
+    ./test_Money.rb:13:in `test_currency'
+
+  2) Error:
+test_equality(TestMoney):
+ArgumentError: wrong number of arguments (1 for 2)
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `new'
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `franc'
+    ./test_Money.rb:8:in `test_equality'
+
+2 tests, 1 assertions, 0 failures, 2 errors, 0 skips

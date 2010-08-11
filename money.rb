@@ -34,9 +34,9 @@ class Dollar < Money
 end
 
 class Franc < Money
-  def initialize(amount)
+  def initialize(amount, currency)
     @amount   = amount
-    @currency = :CHF
+    @currency = currency
   end
 
   def times(multiplier)

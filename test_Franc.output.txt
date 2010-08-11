@@ -1,6 +1,20 @@
 Loaded suite ./test_Franc
 Started
-..
-Finished in 0.001834 seconds.
+EE
+Finished in 0.001967 seconds.
 
-2 tests, 4 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_equality(TestFranc):
+ArgumentError: wrong number of arguments (1 for 2)
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `new'
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `franc'
+    ./test_Franc.rb:14:in `test_equality'
+
+  2) Error:
+test_multiplication(TestFranc):
+ArgumentError: wrong number of arguments (1 for 2)
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `new'
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:9:in `franc'
+    ./test_Franc.rb:8:in `test_multiplication'
+
+2 tests, 0 assertions, 0 failures, 2 errors, 0 skips
