@@ -1,11 +1,6 @@
 Loaded suite ./test_Dollar
 Started
-E
-Finished in 0.001136597 seconds.
+.
+Finished in 0.001696095 seconds.
 
-  1) Error:
-test_multiplication(TestDollar):
-NoMethodError: undefined method `amount' for 10:Fixnum
-    ./test_Dollar.rb:10:in `test_multiplication'
-
-1 tests, 0 assertions, 0 failures, 1 errors
+1 tests, 2 assertions, 0 failures, 0 errors
