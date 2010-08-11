@@ -1,6 +1,6 @@
 Loaded suite ./test_Franc
 Started
 .
-Finished in 0.001640 seconds.
+Finished in 0.001581 seconds.
 
 1 tests, 2 assertions, 0 failures, 0 errors, 0 skips
