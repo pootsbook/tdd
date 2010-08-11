@@ -6,12 +6,12 @@ require 'test/unit'
 class TestDollar < MiniTest::Unit::TestCase
   def test_multiplication
     five = Money.dollar(5)
-    assert_equal(Dollar.new(10), five.times(2))
-    assert_equal(Dollar.new(15), five.times(3))
+    assert_equal(Money.dollar(10), five.times(2))
+    assert_equal(Money.dollar(15), five.times(3))
   end
 
   def test_equality
-    assert(Dollar.new(5) == Dollar.new(5))
-    refute(Dollar.new(5) == Dollar.new(6))
+    assert(Money.dollar(5) == Money.dollar(5))
+    refute(Money.dollar(5) == Money.dollar(6))
   end
 end

@@ -6,6 +6,6 @@ require 'test/unit'
 
 class TestMoney < MiniTest::Unit::TestCase
   def test_equality
-    refute(Dollar.new(5) == Franc.new(5))
+    refute(Money.dollar(5) == Franc.new(5))
   end
 end
