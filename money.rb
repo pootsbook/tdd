@@ -14,6 +14,10 @@ class Money
       @amount == other.amount
   end
 
+  def currency
+    @currency
+  end
+
   protected
   attr_reader :amount
 end
@@ -27,10 +31,6 @@ class Dollar < Money
   def times(multiplier)
     Dollar.new(@amount * multiplier)
   end
-
-  def currency
-    @currency
-  end
 end
 
 class Franc < Money
@@ -41,9 +41,5 @@ class Franc < Money
 
   def times(multiplier)
     Franc.new(@amount * multiplier)
-  end
-
-  def currency
-    @currency
   end
 end
