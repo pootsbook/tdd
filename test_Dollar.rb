@@ -1,9 +1,9 @@
-#!/usr/bin/env ruby1.9
+#!/usr/bin/env ruby1.9.1
 
 require 'dollar'
 require 'test/unit'
 
-class TestDollar < Test::Unit::TestCase
+class TestDollar < MiniTest::Unit::TestCase
   def test_multiplication
     five = Dollar.new(5)
     product = five.times(2)
@@ -14,6 +14,6 @@ class TestDollar < Test::Unit::TestCase
 
   def test_equality
     assert(Dollar.new(5) == Dollar.new(5))
-    assert(Dollar.new(5) != Dollar.new(6))
+    refute(Dollar.new(5) == Dollar.new(6))
   end
 end
