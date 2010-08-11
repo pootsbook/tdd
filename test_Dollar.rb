@@ -3,7 +3,7 @@
 require 'dollar'
 require 'test/unit'
 
-class TestDollar < MiniTest::Unit::TestCase
+class TestDollar < Test::Unit::TestCase
   def test_multiplication
     five = Dollar(5)
     five.times(2)
