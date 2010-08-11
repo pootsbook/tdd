@@ -1,6 +1,12 @@
 Loaded suite ./test_Money
 Started
-.
-Finished in 0.001538 seconds.
+E
+Finished in 0.001749 seconds.
 
-1 tests, 1 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_equality(TestMoney):
+NameError: uninitialized constant Money::Dollar
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:3:in `dollar'
+    ./test_Money.rb:8:in `test_equality'
+
+1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
