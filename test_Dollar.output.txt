@@ -1,2 +1,11 @@
-./test_Dollar.rb:3:in `require': no such file to load -- dollar (LoadError)
-	from ./test_Dollar.rb:3:in `<main>'
+Loaded suite ./test_Dollar
+Started
+E
+Finished in 0.001314553 seconds.
+
+  1) Error:
+test_multiplication(TestDollar):
+NoMethodError: undefined method `times' for #<Dollar:0x8643824 @amount=5>
+    ./test_Dollar.rb:9:in `test_multiplication'
+
+1 tests, 0 assertions, 0 failures, 1 errors
