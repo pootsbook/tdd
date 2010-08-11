@@ -1,6 +1,10 @@
 Loaded suite ./test_Dollar
 Started
-..
-Finished in 0.001109289 seconds.
+F.
+Finished in 0.035643219 seconds.
 
-2 tests, 3 assertions, 0 failures, 0 errors
+  1) Failure:
+test_equality(TestDollar) [./test_Dollar.rb:17]:
+<false> is not true.
+
+2 tests, 4 assertions, 1 failures, 0 errors
