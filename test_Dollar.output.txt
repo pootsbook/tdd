@@ -1,11 +1,11 @@
 Loaded suite ./test_Dollar
 Started
-E
-Finished in 0.001314553 seconds.
+F
+Finished in 0.046487404 seconds.
 
-  1) Error:
-test_multiplication(TestDollar):
-NoMethodError: undefined method `times' for #<Dollar:0x8643824 @amount=5>
-    ./test_Dollar.rb:9:in `test_multiplication'
+  1) Failure:
+test_multiplication(TestDollar) [./test_Dollar.rb:10]:
+<10> expected but was
+<5>.
 
-1 tests, 0 assertions, 0 failures, 1 errors
+1 tests, 1 assertions, 1 failures, 0 errors
