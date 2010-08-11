@@ -1,0 +1,2 @@
+./test_Franc.rb:3:in `require': no such file to load -- franc (LoadError)
+	from ./test_Franc.rb:3:in `<main>'
