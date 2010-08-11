@@ -8,7 +8,4 @@ class Dollar < Money
   def times(multiplier)
     Dollar.new(@amount * multiplier)
   end
-
-  protected
-  attr_reader :amount
 end

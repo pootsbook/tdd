@@ -1,11 +1,10 @@
+Loaded suite ./test_Money
 Started
-E
-Finished in 0.001866 seconds.
+F
+Finished in 0.002021 seconds.
 
-  1) Error:
-test_equality(TestMoney):
-NoMethodError: protected method `amount' called for #<Franc:0x987c494 @amount=5>
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:3:in `=='
-    ./test_Money.rb:9:in `test_equality'
+  1) Failure:
+test_equality(TestMoney) [./test_Money.rb:9]:
+Failed refutation, no message given
 
-1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
+1 tests, 1 assertions, 1 failures, 0 errors, 0 skips
