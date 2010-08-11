@@ -1,0 +1,2 @@
+./test_Dollar.rb:3:in `require': no such file to load -- dollar (LoadError)
+	from ./test_Dollar.rb:3:in `<main>'
