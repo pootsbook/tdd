@@ -19,7 +19,7 @@ class Money
       @currency == other.currency
   end
 
-  def times(multiplier)
+  def *(multiplier)
     Money.new(@amount * multiplier, @currency)
   end
 
@@ -73,7 +73,7 @@ class Sum
     Sum.new(self, addend)
   end
 
-  def times(multiplier)
-    Sum.new(@augend.times(multiplier), @addend.times(multiplier))
+  def *(multiplier)
+    Sum.new(@augend * multiplier, @addend * multiplier)
   end
 end
