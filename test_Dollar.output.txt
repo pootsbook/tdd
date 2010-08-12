@@ -1,6 +1,10 @@
 Loaded suite ./test_Dollar
 Started
-..
-Finished in 0.001710 seconds.
+.F
+Finished in 0.002218 seconds.
 
-2 tests, 4 assertions, 0 failures, 0 errors, 0 skips
+  1) Failure:
+test_multiplication(TestDollar) [./test_Dollar.rb:9]:
+Expected #<Dollar:0x8aeb448 @amount=10, @currency=:USD>, not #<Money:0x8aeb42c @amount=10, @currency=:USD>.
+
+2 tests, 3 assertions, 1 failures, 0 errors, 0 skips
