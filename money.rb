@@ -26,4 +26,8 @@ class Money
   def times(multiplier)
     Money.new(@amount * multiplier, @currency)
   end
+
+  def +(other)
+    Money.new(@amount + other.amount, @currency)
+  end
 end
