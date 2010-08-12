@@ -28,7 +28,7 @@ class Money
   end
 
   def reduce(bank, to_currency)
-    rate = (@currency == :CHF && to_currency == :USD) ? 2 : 1
+    rate = bank.rate(@currency, to_currency)
     Money.new(@amount / rate, to_currency)
   end
 end
@@ -39,6 +39,10 @@ class Bank
   end
 
   def add_rate(from, to, rate)
+  end
+
+  def rate(from, to)
+    (from == :CHF && to == :USD) ? 2 : 1
   end
 end
 
