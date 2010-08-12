@@ -26,11 +26,15 @@ class Money
   def +(other)
     Sum.new(self, other)
   end
+
+  def reduce(to_currency)
+    self
+  end
 end
 
 class Bank
   def reduce(expression, to_currency)
-    return expression if expression.class == Money
+    return expression.reduce(to_currency) if expression.class == Money
     sum = expression
     sum.reduce(to_currency)
   end
