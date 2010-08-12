@@ -1,6 +1,11 @@
 Loaded suite ./test_Money
 Started
-....
-Finished in 0.001957 seconds.
+..E..
+Finished in 0.002316 seconds.
 
-4 tests, 8 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_plus_returns_sum(TestMoney):
+NoMethodError: undefined method `to_sum' for #<Money:0x9baf344 @amount=10, @currency=:USD>
+    ./test_Money.rb:35:in `test_plus_returns_sum'
+
+5 tests, 8 assertions, 0 failures, 1 errors, 0 skips
