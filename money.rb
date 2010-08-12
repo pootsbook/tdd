@@ -70,6 +70,6 @@ class Sum
   end
 
   def +(addend)
-    nil
+    Sum.new(self, addend)
   end
 end
