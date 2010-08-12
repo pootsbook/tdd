@@ -34,7 +34,9 @@ end
 
 class Bank
   def reduce(expression, to_currency)
-    Money.dollar(10)
+    sum    = expression
+    amount = sum.augend.amount + sum.addend.amount
+    Money.new(amount, to_currency)
   end
 end
 
