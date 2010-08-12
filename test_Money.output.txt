@@ -1,6 +1,11 @@
 Loaded suite ./test_Money
 Started
-....
-Finished in 0.001887 seconds.
+...E
+Finished in 0.002357 seconds.
 
-4 tests, 8 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_simple_addition(TestMoney):
+NameError: uninitialized constant TestMoney::Bank
+    ./test_Money.rb:27:in `test_simple_addition'
+
+4 tests, 7 assertions, 0 failures, 1 errors, 0 skips
