@@ -30,9 +30,8 @@ class TestMoney < MiniTest::Unit::TestCase
   end
 
   def test_plus_returns_sum
-    five   = Money.dollar(5)
-    result = five + five
-    sum    = result.to_sum  # no real casting in Ruby
+    five = Money.dollar(5)
+    sum  = five + five
     assert_equal(five, sum.augend)
     assert_equal(five, sum.addend)
   end

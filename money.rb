@@ -28,7 +28,7 @@ class Money
   end
 
   def +(other)
-    Money.new(@amount + other.amount, @currency)
+    Sum.new(self, other)
   end
 end
 
@@ -39,4 +39,13 @@ class Bank
 end
 
 class Expression
+end
+
+class Sum
+  attr_reader :augend, :addend
+
+  def initialize(augend, addend)
+    @augend = augend
+    @addend = addend
+  end
 end
