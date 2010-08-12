@@ -1,11 +1,6 @@
 Loaded suite ./test_Money
 Started
-.......E....
-Finished in 0.003205 seconds.
+............
+Finished in 0.002822 seconds.
 
-  1) Error:
-test_sum_times(TestMoney):
-NoMethodError: undefined method `times' for #<Sum:0x8e0a3d0>
-    ./test_Money.rb:87:in `test_sum_times'
-
-12 tests, 16 assertions, 0 failures, 1 errors, 0 skips
+12 tests, 17 assertions, 0 failures, 0 errors, 0 skips
