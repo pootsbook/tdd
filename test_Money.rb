@@ -42,4 +42,10 @@ class TestMoney < MiniTest::Unit::TestCase
     result = bank.reduce(sum, :USD)
     assert_equal(Money.dollar(7), result)
   end
+
+  def test_reduce_money
+    bank   = Bank.new
+    result = bank.reduce(Money.dollar(1), :USD)
+    assert_equal(Money.dollar(1), result)
+  end
 end
