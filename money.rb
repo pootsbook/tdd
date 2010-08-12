@@ -28,7 +28,8 @@ class Money
   end
 
   def reduce(to_currency)
-    self
+    rate = (@currency == :CHF && to_currency == :USD) ? 2 : 1
+    Money.new(@amount / rate, to_currency)
   end
 end
 
