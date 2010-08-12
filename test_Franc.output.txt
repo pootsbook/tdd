@@ -1,10 +1,6 @@
 Loaded suite ./test_Franc
 Started
-F.
-Finished in 0.003157 seconds.
+..
+Finished in 0.001639 seconds.
 
-  1) Failure:
-test_multiplication(TestFranc) [./test_Franc.rb:9]:
-Expected #<Franc:0x9f0d4fc @amount=10, @currency=:CHF>, not #<Money:0x9f0d4e0 @amount=10, @currency=:CHF>.
-
-2 tests, 3 assertions, 1 failures, 0 errors, 0 skips
+2 tests, 4 assertions, 0 failures, 0 errors, 0 skips
