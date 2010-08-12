@@ -36,6 +36,9 @@ class Bank
   def reduce(expression, to_currency)
     expression.reduce(to_currency)
   end
+
+  def add_rate(from, to, rate)
+  end
 end
 
 class Expression

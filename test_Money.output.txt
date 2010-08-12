@@ -1,6 +1,10 @@
 Loaded suite ./test_Money
 Started
-.......
-Finished in 0.002097 seconds.
+..F.....
+Finished in 0.002984 seconds.
 
-7 tests, 12 assertions, 0 failures, 0 errors, 0 skips
+  1) Failure:
+test_reduce_money_different_currency(TestMoney) [./test_Money.rb:56]:
+Expected #<Money:0xa002630 @amount=1, @currency=:USD>, not #<Money:0xa00264c @amount=2, @currency=:CHF>.
+
+8 tests, 13 assertions, 1 failures, 0 errors, 0 skips
