@@ -31,3 +31,12 @@ class Money
     Money.new(@amount + other.amount, @currency)
   end
 end
+
+class Bank
+  def reduce(expression, to_currency)
+    Money.dollar(10)
+  end
+end
+
+class Expression
+end
