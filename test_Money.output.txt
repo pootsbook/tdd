@@ -1,6 +1,12 @@
 Loaded suite ./test_Money
 Started
-..........
-Finished in 0.002616 seconds.
+.E.........
+Finished in 0.003075 seconds.
 
-10 tests, 15 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_sum_plus_money(TestMoney):
+NoMethodError: undefined method `reduce' for nil:NilClass
+    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:42:in `reduce'
+    ./test_Money.rb:78:in `test_sum_plus_money'
+
+11 tests, 15 assertions, 0 failures, 1 errors, 0 skips
