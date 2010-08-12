@@ -23,6 +23,10 @@ class Money
     @currency
   end
 
+  def times(multiplier)
+    Money.new(@amount * multiplier, @currency)
+  end
+
   protected
   attr_reader :amount
 end
@@ -31,18 +35,10 @@ class Dollar < Money
   def initialize(amount, currency)
     super
   end
-
-  def times(multiplier)
-    Money.new(@amount * multiplier, @currency)
-  end
 end
 
 class Franc < Money
   def initialize(amount, currency)
     super
-  end
-
-  def times(multiplier)
-    Money.new(@amount * multiplier, @currency)
   end
 end
