@@ -1,6 +1,11 @@
 Loaded suite ./test_Money
 Started
-...
-Finished in 0.001737 seconds.
+..E.
+Finished in 0.002390 seconds.
 
-3 tests, 7 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_simple_addition(TestMoney):
+NoMethodError: undefined method `+' for #<Money:0x8a46c9c @amount=5, @currency=:USD>
+    ./test_Money.rb:25:in `test_simple_addition'
+
+4 tests, 7 assertions, 0 failures, 1 errors, 0 skips
