@@ -34,9 +34,8 @@ end
 
 class Bank
   def reduce(expression, to_currency)
-    sum    = expression
-    amount = sum.augend.amount + sum.addend.amount
-    Money.new(amount, to_currency)
+    sum = expression
+    sum.reduce(to_currency)
   end
 end
 
@@ -49,5 +48,10 @@ class Sum
   def initialize(augend, addend)
     @augend = augend
     @addend = addend
+  end
+
+  def reduce(to_currency)
+    amount = @augend.amount + @addend.amount
+    Money.new(amount, to_currency)
   end
 end
