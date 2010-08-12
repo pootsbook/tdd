@@ -28,12 +28,6 @@ class Money
   end
 end
 
-class Dollar < Money
-  def initialize(amount, currency)
-    super
-  end
-end
-
 class Franc < Money
   def initialize(amount, currency)
     super
