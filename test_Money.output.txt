@@ -1,6 +1,11 @@
 Loaded suite ./test_Money
 Started
-...
-Finished in 0.001722 seconds.
+E..
+Finished in 0.001933 seconds.
 
-3 tests, 4 assertions, 0 failures, 0 errors, 0 skips
+  1) Error:
+test_different_class_equality(TestMoney):
+NameError: uninitialized constant TestMoney::Franc
+    ./test_Money.rb:17:in `test_different_class_equality'
+
+3 tests, 3 assertions, 0 failures, 1 errors, 0 skips

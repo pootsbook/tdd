@@ -27,9 +27,3 @@ class Money
     Money.new(@amount * multiplier, @currency)
   end
 end
-
-class Franc < Money
-  def initialize(amount, currency)
-    super
-  end
-end
