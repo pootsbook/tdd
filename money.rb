@@ -1,4 +1,8 @@
 class Money
+  protected
+  attr_reader :amount
+
+  public
   attr_reader :currency
 
   def initialize(amount, currency)
@@ -22,9 +26,6 @@ class Money
   def times(multiplier)
     Money.new(@amount * multiplier, @currency)
   end
-
-  protected
-  attr_reader :amount
 end
 
 class Dollar < Money
