@@ -1,6 +1,6 @@
 Loaded suite ./test_Money
 Started
 .......
-Finished in 0.002055 seconds.
+Finished in 0.002097 seconds.
 
 7 tests, 12 assertions, 0 failures, 0 errors, 0 skips

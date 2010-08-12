@@ -34,9 +34,7 @@ end
 
 class Bank
   def reduce(expression, to_currency)
-    return expression.reduce(to_currency) if expression.class == Money
-    sum = expression
-    sum.reduce(to_currency)
+    expression.reduce(to_currency)
   end
 end
 
