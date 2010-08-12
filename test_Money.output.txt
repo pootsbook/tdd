@@ -1,20 +1,6 @@
 Loaded suite ./test_Money
 Started
-E..E..
-Finished in 0.002710 seconds.
+......
+Finished in 0.002021 seconds.
 
-  1) Error:
-test_reduce_sum(TestMoney):
-NoMethodError: protected method `amount' called for #<Money:0x853713c @amount=3, @currency=:USD>
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:54:in `reduce'
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:38:in `reduce'
-    ./test_Money.rb:42:in `test_reduce_sum'
-
-  2) Error:
-test_simple_addition(TestMoney):
-NoMethodError: protected method `amount' called for #<Money:0x8536994 @amount=5, @currency=:USD>
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:54:in `reduce'
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:38:in `reduce'
-    ./test_Money.rb:28:in `test_simple_addition'
-
-6 tests, 9 assertions, 0 failures, 2 errors, 0 skips
+6 tests, 11 assertions, 0 failures, 0 errors, 0 skips

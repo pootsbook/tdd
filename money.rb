@@ -1,9 +1,5 @@
 class Money
-  protected
-  attr_reader :amount
-
-  public
-  attr_reader :currency
+  attr_reader :amount, :currency
 
   def initialize(amount, currency)
     @amount   = amount
