@@ -1,6 +1,10 @@
 Loaded suite ./test_Money
 Started
-..
-Finished in 0.001655 seconds.
+..F
+Finished in 0.002216 seconds.
 
-2 tests, 3 assertions, 0 failures, 0 errors, 0 skips
+  1) Failure:
+test_different_class_equality(TestMoney) [./test_Money.rb:17]:
+Failed assertion, no message given.
+
+3 tests, 4 assertions, 1 failures, 0 errors, 0 skips
