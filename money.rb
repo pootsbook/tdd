@@ -33,7 +33,7 @@ class Dollar < Money
   end
 
   def times(multiplier)
-    Money.dollar(@amount * multiplier)
+    Dollar.new(@amount * multiplier, :USD)
   end
 end
 
@@ -43,6 +43,6 @@ class Franc < Money
   end
 
   def times(multiplier)
-    Money.franc(@amount * multiplier)
+    Franc.new(@amount * multiplier, :CHF)
   end
 end
