@@ -55,4 +55,8 @@ class TestMoney < MiniTest::Unit::TestCase
     result = bank.reduce(Money.franc(2), :USD)
     assert_equal(Money.dollar(1), result)
   end
+
+  def test_identity_rate
+    assert_equal(1, Bank.new.rate(:USD, :USD))
+  end
 end

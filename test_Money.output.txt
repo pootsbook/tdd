@@ -1,14 +1,6 @@
 Loaded suite ./test_Money
 Started
-....E...
-Finished in 0.002668 seconds.
+.........
+Finished in 0.002508 seconds.
 
-  1) Error:
-test_reduce_money(TestMoney):
-TypeError: nil can't be coerced into Fixnum
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:32:in `/'
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:32:in `reduce'
-    /home/jmglov/Documents/coding/examples/ruby/tdd-by-example/money.rb:42:in `reduce'
-    ./test_Money.rb:48:in `test_reduce_money'
-
-8 tests, 12 assertions, 0 failures, 1 errors, 0 skips
+9 tests, 14 assertions, 0 failures, 0 errors, 0 skips

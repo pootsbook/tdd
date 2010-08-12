@@ -47,6 +47,7 @@ class Bank
   end
 
   def rate(from, to)
+    return 1 if from == to
     @rates[[from, to]]
   end
 end
