@@ -59,4 +59,13 @@ class TestMoney < MiniTest::Unit::TestCase
   def test_identity_rate
     assert_equal(1, Bank.new.rate(:USD, :USD))
   end
+
+  def test_mixed_addition
+    five_bucks = Money.dollar(5)
+    ten_francs = Money.franc(10)
+    bank       = Bank.new
+    bank.add_rate(:CHF, :USD, 2)
+    result = bank.reduce(five_bucks + ten_francs, :USD)
+    assert_equal(Money.dollar(10), result)
+  end
 end

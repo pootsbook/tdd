@@ -1,6 +1,10 @@
 Loaded suite ./test_Money
 Started
-.........
-Finished in 0.002508 seconds.
+........F.
+Finished in 0.003184 seconds.
 
-9 tests, 14 assertions, 0 failures, 0 errors, 0 skips
+  1) Failure:
+test_mixed_addition(TestMoney) [./test_Money.rb:69]:
+Expected #<Money:0x8a16054 @amount=10, @currency=:USD>, not #<Money:0x8a16070 @amount=15, @currency=:USD>.
+
+10 tests, 15 assertions, 1 failures, 0 errors, 0 skips
