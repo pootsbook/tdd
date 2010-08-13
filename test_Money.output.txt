@@ -1,10 +1,6 @@
 Loaded suite ./test_Money
 Started
-.....F.......
-Finished in 0.003417 seconds.
+............
+Finished in 0.002742 seconds.
 
-  1) Failure:
-test_plus_same_currency_returns_money(TestMoney) [./test_Money.rb:94]:
-Expected Money, not Sum.
-
-13 tests, 18 assertions, 1 failures, 0 errors, 0 skips
+12 tests, 17 assertions, 0 failures, 0 errors, 0 skips
