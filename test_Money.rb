@@ -88,4 +88,9 @@ class TestMoney < MiniTest::Unit::TestCase
     result = bank.reduce(sum, :USD)
     assert_equal(Money.dollar(20), result)
   end
+
+  def test_plus_same_currency_returns_money
+    sum = Money.dollar(1) + Money.dollar(1)
+    assert_equal(Money, sum.class)
+  end
 end
